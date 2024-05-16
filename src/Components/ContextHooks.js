@@ -1,9 +1,24 @@
-import React ,{useState}from 'react'
+import React ,{useContext,useState}from 'react'
 
-const ContextHooks = ({id, title, description, price,discountPercentage,rating,stock,brand,category,thumbnail,images, cart, setcart}) => {
+const ContextHooks = ({id, title, description, price,discountPercentage,rating,stock,brand,category,thumbnail,images, cart, setcart,ratingstar}) => {
     
    
     const [btntxt,setbtntxt]=useState("Add to Cart")
+    
+
+    //handling increment when clicking the button
+    const [quantity, setQuantity] = useState(1);
+
+    const handleadd=()=>{
+        setQuantity(quantity + 1);
+    }
+
+    const removeQuantity = () => {
+        if (quantity > 1) {
+            setQuantity(quantity - 1);
+        }
+    }
+   
 return (
     <>
     <div class='requireborder'>
@@ -17,6 +32,7 @@ return (
         <h3>{category}</h3>
         <h3 class='stock'>{stock} Stock Avaliable</h3>
         <h3 class='green'>Rating:{rating}</h3>
+        <div>{ratingstar}</div>
         <p>last updated 10 min ago</p>
         <div>----------------------------------------------------------</div>
        <div><h4>Original Price (1 item) :</h4></div>
@@ -27,7 +43,10 @@ return (
 
        <div class="grid-item">
         <h1 class='green'>${price}</h1>
-        <br></br><br></br><br></br>
+        <button class="buttonadd"  onClick={() => {handleadd()}}>+</button>
+        <span>      {quantity}  </span>
+        <button class="buttonadd"  onClick={() => {removeQuantity()}}> -</button>
+        <br></br><br></br>
         <h2 class='green'>Discount Offer :{discountPercentage}%</h2>
         <br></br>
         <br></br>
@@ -38,13 +57,13 @@ return (
                     {btntxt=="Add to Cart"?"Add to Cart":"Remove cart"}</button>
             
         
-        <br></br><br></br><br></br><br></br><br></br>
-        
+        <br></br><br></br><br></br><br></br><br></br> <br></br> <br></br><br/> 
+
         <div>----------------------------------------------------------</div>
-       <div><h4 >${price}</h4></div>
-       <div><h4 class='green'>${price*discountPercentage/100}</h4></div>
-       <div><h4 >${price-(price*discountPercentage/100)}</h4></div>
-      <div>${(price-(price*discountPercentage/100))*(stock)}</div>
+        <div><h4 >${quantity*price}</h4></div>
+       <div><h4 class='green'>${((quantity*price)*discountPercentage/100).toFixed(3)}  </h4></div>
+       <div><h4 >${((quantity*price)-((quantity*price)*discountPercentage/100)).toFixed(3)}</h4></div>
+      <div>${(((quantity*price)-((quantity*price)*discountPercentage/100))*(stock)).toFixed(3)}</div>
        </div>
 
         </div>

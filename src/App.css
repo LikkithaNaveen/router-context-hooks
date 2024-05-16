@@ -34,6 +34,12 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+div.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
 .topnav {
   overflow: hidden;
   background-color: #333;
@@ -256,7 +262,7 @@ button:hover{
 .buttonstyle{
   border:none;
   border-radius:0px;
-  padding:6px;
+  padding:5px;
   font-size:12px;
   cursor:pointer;
   background-color: white;
@@ -327,4 +333,11 @@ button:hover{
   width :140px;
   height: 50px;
   border: 1px solid black;
+}
+.buttonadd{
+  background-color: rgb(3, 120, 150);
+  color: white;
+  height: 28px;
+  width: 44px;
+  font-weight: bold;
 }

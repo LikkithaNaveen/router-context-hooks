@@ -1,8 +1,8 @@
 import React from 'react'
 
-const Navbar = ({cart}) => {
+const Navbar = ({cart,quantity}) => {
   return (
-    <div class="topnav">
+<div class="topnav sticky">
   <a class="active" href="#home">🛒Cart {cart}</a>
   <a href="#news">News</a>
   <a href="#contact">About</a>

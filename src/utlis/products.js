@@ -11,7 +11,8 @@ export const products=[
         "brand": "Apple",
         "category": "smartphones",
         "thumbnail": "https://i.dummyjson.com/data/products/1/thumbnail.jpg",
-        "images": "https://res.cloudinary.com/graham-media-group/image/upload/f_auto/q_auto/c_scale,w_400/v1/production/public/KAZ4WDT5QJD7VCRLR7UVJ6CXJU.jpg?_a=AJFJtWIA"
+        "images": "https://res.cloudinary.com/graham-media-group/image/upload/f_auto/q_auto/c_scale,w_400/v1/production/public/KAZ4WDT5QJD7VCRLR7UVJ6CXJU.jpg?_a=AJFJtWIA",
+        "ratingstar":'⭐⭐⭐⭐✰'
     },
     {
         "id": 2,
@@ -24,7 +25,8 @@ export const products=[
         "brand": "Apple",
         "category": "smartphones",
         "thumbnail": "https://i.dummyjson.com/data/products/2/thumbnail.jpg",
-        "images": 'https://m.media-amazon.com/images/I/61nvTbIusDL.jpg'
+        "images": 'https://m.media-amazon.com/images/I/61nvTbIusDL.jpg',
+        "ratingstar":'⭐⭐⭐⭐✰'
     },
     {
         "id": 3,
@@ -37,7 +39,8 @@ export const products=[
         "brand": "Samsung",
         "category": "smartphones",
         "thumbnail": "https://i.dummyjson.com/data/products/3/thumbnail.jpg",
-        "images": 'https://admin.hyperce.io/assets/thumbnail__12__preview.jpg?w=800'
+        "images": 'https://admin.hyperce.io/assets/thumbnail__12__preview.jpg?w=800',
+        "ratingstar":'⭐⭐⭐⭐✰'
     },
     {
         "id": 4,
@@ -50,7 +53,8 @@ export const products=[
         "brand": "OPPO",
         "category": "smartphones",
         "thumbnail": "https://i.dummyjson.com/data/products/4/thumbnail.jpg",
-        "images": 'https://www.oppo.com/content/dam/oppo/product-asset-library/f19/f19-overview-v1/v1/assets/chunk6-img1-1920.jpg'
+        "images": 'https://www.oppo.com/content/dam/oppo/product-asset-library/f19/f19-overview-v1/v1/assets/chunk6-img1-1920.jpg',
+        "ratingstar":'⭐⭐⭐⭐✰'
     },
     {
         "id": 5,
@@ -63,6 +67,7 @@ export const products=[
         "brand": "Huawei",
         "category": "smartphones",
         "thumbnail": "https://i.dummyjson.com/data/products/5/thumbnail.jpg",
-        "images": 'https://fdn2.gsmarena.com/vv/pics/huawei/huawei-p30-all-colours.jpg'
+        "images": 'https://fdn2.gsmarena.com/vv/pics/huawei/huawei-p30-all-colours.jpg',
+        "ratingstar":'⭐⭐⭐⭐✰'
     }
 ]
